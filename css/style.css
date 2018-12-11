@@ -1,0 +1,36 @@
+.display-3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.5rem;
+}
+.desplegado{
+    display: inherit;
+}
+.oculto{
+    display: none;
+}
+/* .tarea{
+    display: none;
+}
+.form-group{
+    display: inherit;
+} */
+.resultado{
+    color: #dc3545;
+}
+.container-resultado{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.output-resultado{
+    margin-top: 1rem;
+}
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
