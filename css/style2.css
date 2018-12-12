@@ -1,42 +1,15 @@
-.display-3{
-    font-size: 2rem;
-    font-weight: 500;
-}
-h2{
-    font-size: 1.5rem;
-}
-.desplegado{
-    display: inherit;
-}
-.oculto{
-    display: none;
-}
-/* .tarea{
-    display: none;
-}
-.form-group{
-    display: inherit;
-} */
-.resultado{
-    color: #dc3545;
-}
-.container-resultado{
-    width: 80%;
-    position: relative;
-    left: 10%;
-    padding: 1rem;
-    margin: 2rem 0;
-}
-.output-resultado{
-    margin-top: 1rem;
-}
-footer{
-    text-align: center;
-    margin-top: 2rem;
-}
-
-/* ********** */
-ul {
+body {
+    margin: 0;
+    min-width: 250px;
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
     margin: 0;
     padding: 0;
   }
@@ -100,4 +73,48 @@ ul {
   .close:hover {
     background-color: #f44336;
     color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
   }
