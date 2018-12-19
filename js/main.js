@@ -21,6 +21,7 @@ class Main{
         this.outputResultado.classList.add('output-resultado')
         /* inputs */
         this.input = document.querySelector('#cantidad-añadir')
+        this.inputProducto = document.querySelector('#producto-añadir')
         this.btnAñadir = document.querySelector('.añadir').addEventListener('click', this.añadirTarea.bind(this))
         this.outputAñadir = document.querySelector('.output-añadir')
     }
@@ -37,12 +38,14 @@ class Main{
     }
     añadirTarea(){
         this.input.value
-        let mensaje = 'Introduce un producto'
-        if(this.input.value == ''){
+        this.inputProducto.value
+        let mensaje = 'Introduce un producto y una cantidad'
+        if(this.input.value == '' && this.inputProducto == ''){
             this.outputAñadir.innerHTML = `<p>${mensaje}</p>`
         }
         else{
-            this.outputAñadir.innerHTML = `<p>${this.input.value}</p>`
+            this.outputAñadir.innerHTML = `<div class="card"><p>producto: ${this.inputProducto.value}</p>
+                                        <p>Cantidad: ${this.input.value}</p></div>`
         }
     }
     sumarCantidades(){
